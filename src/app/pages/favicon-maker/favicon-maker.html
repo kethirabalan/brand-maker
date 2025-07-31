@@ -1,0 +1,36 @@
+<div class="min-h-screen bg-gradient-to-br from-purple-900/30 to-fuchsia-700/30 p-6 flex items-center justify-center">
+    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-8 w-full max-w-xl shadow-2xl border border-white/10">
+      <h2 class="text-white text-2xl font-semibold mb-2">Favicon Maker</h2>
+      <p class="text-stone-600 text-sm mb-6">Upload your logo to generate favicons in different sizes.</p>
+  
+      <!-- Upload Input -->
+      <input
+      type="file"
+      (change)="onFileSelected($event)"
+      accept="image/*"
+      class="block w-full text-sm text-slate-600 mb-4
+             file:bg-purple-700 file:text-white file:rounded file:border-0
+             file:py-2 file:px-4 file:cursor-pointer
+             file:appearance-none text-transparent"
+    />
+    
+    
+    <!-- File Info -->
+      <div *ngIf="previewUrl" class="mb-6 text-center">
+        <img [src]="previewUrl" alt="Preview" class="w-24 h-24 object-contain mx-auto rounded border border-white/20" />
+      </div>
+
+      <div *ngIf="selectedFileName && selectedFileSize" class="text-sm text-white mt-2 text-center mb-5">
+        <p><strong>File:</strong> {{ selectedFileName }}</p>
+        <p><strong>Size:</strong> {{ selectedFileSize }}</p>
+      </div>
+  
+      <button 
+       (click)="generateFavicons()"
+        [disabled]="!selectedFile"
+        class="w-full py-2 bg-gradient-to-r from-purple-600 to-pink-500 rounded text-white font-semibold hover:opacity-90 transition disabled:opacity-50">
+        Generate Favicons
+      </button>
+    </div>
+  </div>
+  

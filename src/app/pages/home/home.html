@@ -1,0 +1,66 @@
+<div class="min-h-screen flex flex-col justify-between bg-gradient-to-br from-[#fceabb] via-[#f8b8e5] to-[#c2b6ff] text-black">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 w-full bg-white/10 backdrop-blur-md border-b border-white/20 text-black shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-xl font-semibold flex items-center gap-2">
+        <div class="w-4 h-4 rounded-full bg-blue-500"></div>
+        <a href="/" class="hover:text-purple-300 transition text-white">Try</a>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="/upgrade" class="hover:text-purple-300 transition text-white">Pricing</a>
+        <a href="/login" class="hover:text-purple-300 transition text-white">Login</a>
+      </nav>
+      <!-- Mobile menu icon -->
+      <button class="md:hidden text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Announcement Bar -->
+  <div class="bg-white/40 backdrop-blur-sm text-sm px-6 py-2 text-center font-medium">
+    TryxMe Tools Launching Beta — Start creating your brand assets today →
+  </div>
+
+  <!-- Hero Section -->
+  <main class="text-center px-6 py-20 max-w-4xl mx-auto">
+    <h1 class="text-[2.8rem] md:text-6xl font-black leading-tight tracking-tight">
+      Create your <span class="italic">brand</span><br /> with just one click.
+    </h1>
+    <p class="mt-6 text-lg text-gray-800 font-medium max-w-xl mx-auto">
+      TryxMe helps you create professional branding assets like logos, kits, mockups, and listings without needing a
+      designer.
+    </p>
+
+    <!-- iOS-style buttons -->
+    <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+      <button routerLink="/signup"
+        class="px-6 py-3 rounded-full bg-black text-white text-sm font-semibold shadow-md hover:scale-105 transition-all">
+        Get Started
+      </button>
+      <button routerLink="/upgrade"
+        class="px-6 py-3 rounded-full bg-white/60 backdrop-blur text-black text-sm font-semibold border border-white shadow hover:scale-105 transition-all">
+        See Pricing
+      </button>
+    </div>
+  </main>
+
+  <!-- Customer Logos -->
+  <!-- <section class="py-12 bg-white/20 backdrop-blur-md">
+      <div class="flex justify-center flex-wrap gap-8 items-center opacity-80 max-w-5xl mx-auto">
+        <img src="assets/customer1.svg" class="h-6" alt="Brand 1" />
+        <img src="assets/customer2.svg" class="h-6" alt="Brand 2" />
+        <img src="assets/customer3.svg" class="h-6" alt="Brand 3" />
+        <img src="assets/customer4.svg" class="h-6" alt="Brand 4" />
+      </div>
+    </section> -->
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="backdrop-blur-md border-t border-white/10 text-center text-sm py-6 text-black mt-1 rounded-t-xl">
+    &copy; 2025 TryxMe. Crafted with passion 💜
+  </footer>
+</div>

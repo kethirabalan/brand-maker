@@ -1,0 +1,23 @@
+<div class="min-h-screen bg-gradient-to-br from-purple-900 via-fuchsia-800 to-pink-700 p-6 text-white">
+    <div class="max-w-6xl mx-auto">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-3xl font-bold">Listing Kit</h2>
+        <button class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded backdrop-blur-md border border-white/20 transition">
+          + Add New
+        </button>
+      </div>
+  
+      <!-- Listing Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div *ngFor="let item of items" class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 shadow-xl">
+          <h3 class="text-xl font-semibold mb-2">{{ item.title }}</h3>
+          <p class="text-sm text-gray-300 mb-3">{{ item.description }}</p>
+          <button [routerLink]="item.url" class="mt-auto bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded border border-white/20 transition text-sm">
+            View More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

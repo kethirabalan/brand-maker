@@ -1,0 +1,72 @@
+<div class="min-h-screen flex bg-gradient-to-br from-[#1e1c2a] to-[#2f2544] text-white font-sans">
+  <!-- Sidebar -->
+  <aside class="w-20 md:w-60 bg-white/10 backdrop-blur-md border-r border-white/10 p-4 flex flex-col justify-between">
+    <div>
+      <h1 class="text-2xl font-bold mb-10 hidden md:block">Tryxme</h1>
+      <nav class="flex flex-col gap-6 text-sm">
+        <a href="#" class="flex items-center gap-3 hover:text-purple-300 transition">
+          <span>🏠</span><span class="hidden md:inline">Dashboard</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:text-purple-300 transition">
+          <span>⚙️</span><span class="hidden md:inline">Settings</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:text-purple-300 transition">
+          <span>📦</span><span class="hidden md:inline">Services</span>
+        </a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-2 text-sm">
+      <img src="https://i.pravatar.cc/40" class="rounded-full w-8 h-8" />
+      <span class="hidden md:inline">Kethirabalan</span>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-6 space-y-8">
+    <!-- Welcome Header -->
+    <div class="bg-gradient-to-r from-purple-800/60 to-pink-500/60 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold">Welcome back, Kethirabalan 👋</h2>
+      <p class="text-gray-300 mt-2">Your services at a glance</p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-md">
+        <p class="text-sm text-gray-400">Active Clients</p>
+        <h3 class="text-3xl font-bold">38</h3>
+        <p class="text-xs text-green-400 mt-1">+12% this month</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-md">
+        <p class="text-sm text-gray-400">Ongoing Projects</p>
+        <h3 class="text-3xl font-bold">7</h3>
+        <p class="text-xs text-yellow-400 mt-1">Stable</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/10 shadow-md">
+        <p class="text-sm text-gray-400">Revenue</p>
+        <h3 class="text-3xl font-bold">$4,250</h3>
+        <p class="text-xs text-blue-400 mt-1">+20% from last week</p>
+      </div>
+    </div>
+
+    <!-- Graph or Activity -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Placeholder Graph -->
+      <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-lg">
+        <h4 class="text-lg font-semibold mb-4">Service Usage</h4>
+        <div class="h-48 bg-gradient-to-br from-[#383360] to-[#2e1f4d] rounded-xl flex items-center justify-center text-gray-400">
+          📊 Graph (Chart.js placeholder)
+        </div>
+      </div>
+
+      <!-- Activity Feed -->
+      <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-lg">
+        <h4 class="text-lg font-semibold mb-4">Recent Activity</h4>
+        <ul class="space-y-4 text-sm text-gray-300">
+          <li>🛠️ Updated landing page for client <span class="text-purple-300 font-semibold"></span></li>
+          <li>💳 Payment received from <span class="text-purple-300">AI Starter</span> - $1,200</li>
+          <li>✅ Project <span class="text-purple-300">Tryx PDF Tools</span> marked as completed</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
